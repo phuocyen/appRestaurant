@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/Pink_1"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="390dp"
+        android:background="@drawable/custom_bo_goc"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Thông tin bàn ăn" />
+
+    <TextView
+        android:id="@+id/txtSoBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bàn 10"
+        android:textSize="20dp"
+        android:layout_marginLeft="170dp"
+        android:layout_below="@+id/button"
+
+        />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txtSoBan"
+        android:text="Tên khách hàng:" />
+
+    <TextView
+        android:id="@+id/txtTenKhachHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSoBan"
+        android:layout_marginLeft="170dp"
+        android:textSize="20dp"
+        android:text="####" />
+
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView10"
+        android:text="SĐT:" />
+
+    <TextView
+        android:id="@+id/txtSDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_marginLeft="170dp"
+        android:textSize="20dp"
+        android:text="####" />
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView12"
+        android:text="Date/Time:" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+
+        android:layout_below="@+id/textView15f"
+        android:text="Refresh" />
+
+    <TextView
+        android:id="@+id/txtNgay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_marginLeft="170dp"
+        android:textSize="20dp"
+        android:text="21/23/2002" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_marginLeft="290dp"
+        android:textSize="20dp"
+        android:text="_" />
+
+    <TextView
+        android:id="@+id/txtGio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_marginLeft="300dp"
+        android:textSize="20dp"
+        android:text="24:44" />
+
+    <TextView
+        android:id="@+id/textView15f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView14"
+        android:text="Tổng tiền:" />
+
+    <TextView
+        android:id="@+id/txtTongTien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="170dp"
+        android:layout_below="@+id/textView14"
+        android:text="####" />
+
+    <Button
+        android:id="@+id/btnGoiMon"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/textView15f"
+
+        android:background="@drawable/custom_xuyenthau"
+        android:text="Thêm các món khác" />
+
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="250dp"
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rcv_CTHD"
+            android:background="@color/red"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnThanhToan"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@+id/scroll"
+        android:background="@color/green"
+        android:textSize="20dp"
+
+        android:textColor="@color/white"
+        android:text="Thanh toán" />
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        tools:targetApi="31">
+
+
+
+        <activity
+            android:name=".DangNhapActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" ></activity>
+        <activity android:name=".TrangChuActivity" ></activity>
+        <activity android:name=".DetailMonAnActivity" ></activity>
+        <activity android:name=".DetailBanAnActivity" ></activity>
+        <activity android:name=".AddKhachHangActivity" ></activity>
+        <activity android:name=".ThongTinDatBanActivity" ></activity>
+        <activity android:name=".GoiMonActivity" ></activity>
+        <activity android:name=".addNhanVien"></activity>
+        <activity android:name=".updateNV"></activity>
+        <activity android:name=".NhanSuActivity"></activity>
+        <activity android:name=".addLoai"></activity>
+        <activity android:name=".updateLoai"></activity>
+        <activity android:name=".PhanLoaiActivity"></activity>
+        <activity android:name=".addMonAn"></activity>
+        <activity android:name=".updateMonAn"></activity>
+        <activity android:name=".ThucDonActivity"></activity>
+
+
+    </application>
+
+</manifest>

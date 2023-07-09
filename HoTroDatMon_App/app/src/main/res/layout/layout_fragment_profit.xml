@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:background="@color/Pink_4"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Doanh thu" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EA7D7D"
+        android:layout_below="@+id/button"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:text="Biểu đồ thông tin" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="40dp"
+        android:layout_height="450dp"
+        android:id="@+id/barchart"/>
+
+
+
+
+</RelativeLayout>

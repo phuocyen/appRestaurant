@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:background="@color/Pink_4"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Quản trị hệ thống" />
+
+    <Button
+        android:id="@+id/btnNhansu"
+        android:layout_width="match_parent"
+        android:background="@color/Pink_1"
+        android:layout_height="300px"
+        android:gravity="center"
+        android:textColor="@color/Pink_2"
+        android:textSize="20dp"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="10dp"
+        android:text="Nhân lực" />
+
+
+    <Button
+        android:id="@+id/btnLoai"
+        android:layout_width="match_parent"
+        android:background="@color/Pink_1"
+        android:layout_height="300px"
+        android:gravity="center"
+        android:textColor="@color/Pink_2"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnNhansu"
+        android:layout_marginTop="10dp"
+        android:text="Phân loại" />
+
+
+
+    <Button
+        android:id="@+id/btnThucDon"
+        android:layout_width="match_parent"
+        android:background="@color/Pink_1"
+        android:layout_height="300px"
+        android:gravity="center"
+        android:textColor="@color/Pink_2"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnLoai"
+        android:layout_marginTop="10dp"
+        android:text="Thực đơn" />
+
+
+    <Button
+        android:id="@+id/btnDangXuat"
+        android:layout_width="match_parent"
+        android:background="@color/Pink_1"
+        android:layout_height="300px"
+        android:gravity="center"
+        android:textColor="@color/Pink_2"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnThucDon"
+        android:layout_marginTop="10dp"
+        android:text="Đăng xuất" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+</RelativeLayout>

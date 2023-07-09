@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/backToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/purple_700"
+        tools:ignore="MissingConstraints">
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Quản Lý Nhân Viên"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edtMaNV"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtMaNV"
+        android:enabled="false"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="Enter Your ID..."
+        app:layout_constraintBottom_toTopOf="@id/edtTenNV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+    <EditText
+        android:background="@color/white"
+        android:id="@+id/edtTenNV"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="Enter Your Name..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtMaNV"
+        app:layout_constraintBottom_toTopOf="@id/edtSDT" />
+
+    <EditText
+        android:background="@color/white"
+        android:id="@+id/edtSDT"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="15"
+        android:inputType="number"
+        android:hint="Enter your Phone Number..."
+        app:layout_constraintTop_toBottomOf="@id/edtTenNV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+
+    <EditText
+        android:background="@color/white"
+        android:id="@+id/edtCCCD"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="15"
+        android:inputType="number"
+        android:hint="Enter your CCCD..."
+        app:layout_constraintTop_toBottomOf="@id/edtSDT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+
+    <EditText
+        android:background="@color/white"
+        android:id="@+id/edtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="Enter your User..."
+        app:layout_constraintTop_toBottomOf="@id/edtCCCD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+
+    <EditText
+
+        android:background="@drawable/custom_edt"
+        android:id="@+id/edtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="15"
+        android:inputType="textPassword"
+        android:hint="Enter your Pass..."
+        android:longClickable="false"
+        android:drawableRight="@drawable/baseline_visibility_off_24"
+        app:layout_constraintTop_toBottomOf="@id/edtUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <EditText
+        android:longClickable="false"
+        android:drawableRight="@drawable/baseline_visibility_off_24"
+        android:id="@+id/edtConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_edt"
+        android:ems="15"
+        android:hint="Confirm your Pass..."
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtPass" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="26dp"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:text="Save"
+        android:background="@color/Pink_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtConfirm" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

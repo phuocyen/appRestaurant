@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Pink_1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+
+        <EditText
+            android:id="@+id/editTextMaMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Mã Món Ăn"
+            android:enabled="false"/>
+
+
+        <EditText
+            android:id="@+id/editTextTenMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Tên Món Ăn"
+            />
+
+
+
+        <EditText
+            android:id="@+id/editHinhAnh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Hình Ảnh" />
+
+
+
+
+        <EditText
+            android:id="@+id/editTextDonGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Đơn giá"/>
+
+
+        <EditText
+            android:id="@+id/editTextGhiChu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ghi chú"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:minLines="3" />
+
+        <EditText
+            android:id="@+id/editTextMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:maxLines="5"
+            android:hint=" Mô Tả"/>
+
+
+        <Spinner
+            android:id="@+id/spinnerMaLoai"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/buttonSuaMonAn"
+            android:layout_marginTop="10dp"
+            android:background="@color/Pink_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật" />
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_marginTop="10dp"
+            android:background="@color/Pink_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quay về" />
+
+    </LinearLayout>
+
+</ScrollView>

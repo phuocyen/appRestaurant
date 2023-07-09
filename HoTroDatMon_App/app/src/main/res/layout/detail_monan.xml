@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Pink_1"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/back"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/hinhback"
+            android:layout_marginLeft="5dp"
+
+            >
+
+        </Button>
+
+
+        <ImageView
+            android:id="@+id/imgHinhMon"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <LinearLayout
+
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="350dp"
+            android:background="@color/Pink_2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTenMon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chả cua Nha Trang"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="@color/Pink_4"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtMoTa"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:lineSpacingExtra="8dp"
+                android:textSize="23sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Là hương vị ẩm thực đặt biệt của Việt Nam theo tiêu chuẩn quốc gia được bình chọn thông qua người dân tại địa phương là người con đại ngàn" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/txtDonGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="570dp"
+            android:background="@color/Pink_4"
+            android:textColor="@color/Pink_1"
+            android:textSize="20dp"
+            android:text="Button" />
+    </RelativeLayout>
+
+</ScrollView>

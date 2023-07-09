@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HoTroDatMon_App</string>
+    <string name="action_home">Home</string>
+    <string name="action_menu">Profit</string>
+    <string name="action_oder">Table</string>
+    <string name="action_other">Other</string>
+    <string name="search_string">Search</string>
+</resources>
